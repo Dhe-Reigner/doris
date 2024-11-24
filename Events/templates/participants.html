@@ -1,0 +1,17 @@
+ {% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+{% for items in out %}
+
+  Name:     {{ items }}<br>
+  Email:    {{ items.email }}<br>
+  Password: {{ items.password }}<br>
+  Address:  {{ items.address }}<br>
+  Phone:    {{ items.phone }}<br>
+
+   {% endfor %}
+
+
+
+{% endblock %}

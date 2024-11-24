@@ -1,2 +1,34 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+    
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card text-white bg-info mb-3" style="max-width: 20rem;">
+                <div class="card-header">Events</div>
+                <div class="card-body">
+                    {% for safari in tour %}
+                    {{ safari }}<br>
+                    {{ safari.description }}<br>
+                    {{ safari.location }}<br>
+                    {{ safari.start_time }}<br>
+                    {{ safari.end_time }}<br>
+                    {{ safari.organizer }}<br>
+                
+                {% endfor %}
+                </div>
+              </div>
 
-Hello!!!
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+ 
+
+{% endblock %}
